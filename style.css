@@ -4,6 +4,15 @@ html, body {
     height: 100%;
     width: 100%;
 }
+mark {
+    background-color: #b2f2ee;
+    color: #505050;
+}
+markinabout{
+    color: #181919;
+    font-weight: 900;
+    font-size: 2vw;
+}
 .headerblock{
     position: relative;
     display:block;
@@ -37,23 +46,28 @@ img.logo{
     width: 8%;
     height: auto;
 }
-.greetingtext{
+.greeting{
     position: relative;
+    display: block;
     width: 100%;
     height: 40%;
 }
-img.greetingtext{
+.greetingtext{
     position: absolute;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 70%;
-    height: auto;
+    display: block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    font-size: 3.8vw;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    color: #505050;
 }
 .contactbtn{
     position: relative;
+    display: inline-block;
     text-align: center;
     width: 100%;
     height: 40%;
@@ -68,20 +82,26 @@ img.contactbtn{
     width: 16%;
     height: auto;
 }
-.title{
+.title1{
     position: relative;
-    width: 100%;
-    height: 25%;
-}
-img.title{
-    position: absolute;
+    text-align: center;
+    display: block;
+    font-size: 3vw;
     margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-    height: auto;
+    margin-top: 7%;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    color: #181919;
+}
+.title2{
+    position: relative;
+    text-align: center;
+    display: block;
+    font-size: 2vw;
+    margin: auto;
+    margin-bottom: 7%;
+    font-family: 'Merriweather';
+    color: #5e5f5f;
 }
 .aboutcontent{
     position: relative;
@@ -105,14 +125,12 @@ img.aboutimage{
     float: right;
     width: 40%;
     height: auto;
+    margin-top: 3%;
+    font-size: 1.5vw;
     margin-right: 10%;
-}
-img.abouttext{
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 10%;
-    margin-top: 15%;
+    font-weight: 300;
+    font-family: 'Merriweather';
+    color: #5e5f5f;
 }
 .footer{
     position: relative;
@@ -125,16 +143,6 @@ img.abouttext{
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
 }
-img.footerimg{
-    position: absolute;
-    width: 100%;
-    height: auto;
-}
-.footertemplate{
-    position: relative;
-    width: 100%;
-    height: 80%;
-}
 img.footertemplate{
     position: absolute;
     margin: auto;
@@ -145,18 +153,197 @@ img.footertemplate{
     width: 80%;
     height: auto;
 }
-.template{
+.works{
     position: relative;
-    width: 100%;
+    display: block;
+    width: 80%;
     height: 80%;
-}
-img.template{
-    position: absolute;
     margin: auto;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
     width: 70%;
-    height: auto;
+}
+.workimage{
+    position: relative;
+    display: inline-block;
+    width: 31%;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.workimage:after {
+    position: relative;
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.workimageabs{
+    position: absolute;
+    display: inline-block;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+.workimg{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.team{
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+}
+.teamimage{
+    position: relative;
+    display: inline-block;
+    width: 31%;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.teamimage:after {
+    position: relative;
+    content: '';
+    display: block;
+    padding-top: 119%;
+}
+.teamimageabs{
+    position: absolute;
+    display: inline-block;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+.teamimg{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 60.25%;
+    background-size: 100%;
+}
+.footerbg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+img.footerbg{
+    width: 100%;
+    height: 100%;
+}
+.contact{
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.contactimg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.socials{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+}
+.socialtext{
+    position: relative;
+    text-align: center;
+    display: block;
+    font-size: 1.5vw;
+    margin: auto;
+    margin-top: 5%;
+    font-weight: 300;
+    font-family: 'Montserrat';
+    color: gray;
+}
+.socialbtns{
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+    height: 50%;
+    width: 20%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.socialbutton{
+    position: relative;
+    display: inline-block;
+    width: 21.5%;
+    margin-left: 1%;
+}
+.socialbutton:after {
+    position: relative;
+    content: '';
+    display: block;
+    padding-top: 110%;
+}
+.map{
+    position: absolute;
+    width: 41%;
+    height: 45%;
+    bottom: 6%;
+    right: 1%;
+}
+button.socialbutton{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
